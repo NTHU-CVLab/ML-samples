@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="petal width (cm) <= 0.8\nentropy = 1.581\nsamples = 120\nvalue = [39, 37, 44]", fillcolor="#8139e510"] ;
+1 [label="entropy = 0.0\nsamples = 39\nvalue = [39, 0, 0]", fillcolor="#e58139ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="petal width (cm) <= 1.75\nentropy = 0.995\nsamples = 81\nvalue = [0, 37, 44]", fillcolor="#8139e529"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="petal length (cm) <= 4.95\nentropy = 0.469\nsamples = 40\nvalue = [0, 36, 4]", fillcolor="#39e581e3"] ;
+2 -> 3 ;
+4 [label="petal width (cm) <= 1.65\nentropy = 0.187\nsamples = 35\nvalue = [0, 34, 1]", fillcolor="#39e581f8"] ;
+3 -> 4 ;
+5 [label="entropy = 0.0\nsamples = 34\nvalue = [0, 34, 0]", fillcolor="#39e581ff"] ;
+4 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]", fillcolor="#8139e5ff"] ;
+4 -> 6 ;
+7 [label="petal width (cm) <= 1.55\nentropy = 0.971\nsamples = 5\nvalue = [0, 2, 3]", fillcolor="#8139e555"] ;
+3 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 2]", fillcolor="#8139e5ff"] ;
+7 -> 8 ;
+9 [label="petal length (cm) <= 5.45\nentropy = 0.918\nsamples = 3\nvalue = [0, 2, 1]", fillcolor="#39e5817f"] ;
+7 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0]", fillcolor="#39e581ff"] ;
+9 -> 10 ;
+11 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]", fillcolor="#8139e5ff"] ;
+9 -> 11 ;
+12 [label="petal length (cm) <= 4.85\nentropy = 0.165\nsamples = 41\nvalue = [0, 1, 40]", fillcolor="#8139e5f9"] ;
+2 -> 12 ;
+13 [label="sepal width (cm) <= 3.1\nentropy = 1.0\nsamples = 2\nvalue = [0, 1, 1]", fillcolor="#39e58100"] ;
+12 -> 13 ;
+14 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]", fillcolor="#8139e5ff"] ;
+13 -> 14 ;
+15 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]", fillcolor="#39e581ff"] ;
+13 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 39\nvalue = [0, 0, 39]", fillcolor="#8139e5ff"] ;
+12 -> 16 ;
+}
